@@ -11,6 +11,6 @@ public class Controller {
 	@GetMapping("/main")
 	public String getapp() {
 		
-		return "hi welcome to main page";
+		return "hi welcome pipeline created....";
 	}
 }
