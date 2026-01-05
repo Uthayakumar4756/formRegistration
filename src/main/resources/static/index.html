@@ -120,7 +120,7 @@ document.getElementById("employeeForm").addEventListener("submit", function(e) {
         salary: document.getElementById("salary").value
     };
 
-    fetch("http://localhost:9191/api/employee", {
+    fetch("/api/employee", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -136,7 +136,7 @@ document.getElementById("employeeForm").addEventListener("submit", function(e) {
 });
 
 function loadEmployees() {
-    fetch("http://localhost:9191/api/getemployee")
+    fetch("/api/getemployee")
         .then(res => res.json())
         .then(data => {
             const tableBody = document.getElementById("tableBody");
