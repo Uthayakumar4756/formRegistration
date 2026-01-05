@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default   # self-hosted agent
 
 steps:
 - checkout: self   # fetch latest code from GitHub
